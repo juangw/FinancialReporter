@@ -40,7 +40,7 @@ class AlignmentTransform(TransformerMixin):
 
             #We only grab the columns we are going to use
             line_data = X.loc[min(X.index)].filter(self.columns)
-            #print(line_data)
+            print(line_data)
 
             #This iterates through all the rows
             for i in X.index:
